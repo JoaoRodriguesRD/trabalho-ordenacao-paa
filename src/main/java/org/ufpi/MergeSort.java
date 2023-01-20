@@ -64,7 +64,7 @@ public class MergeSort {
             count += mergeSort(numeros, meio+1, fim);
             count += merge(numeros, inicio, meio, fim);
         }
-        System.out.println(Arrays.toString(numeros));
+        // System.out.println(Arrays.toString(numeros));
         return count;
     }
 }
