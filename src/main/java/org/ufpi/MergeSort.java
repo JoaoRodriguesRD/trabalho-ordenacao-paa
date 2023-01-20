@@ -5,11 +5,11 @@ import java.util.Arrays;
 
 public class MergeSort {
     public static void main(String[] args) {
-        int [] numeros = {0,9,7,4,1,19,0,3,5};
+        Integer [] numeros = {0,9,7,4,1,19,0,3,5};
         System.out.println(mergeSort(numeros, 0, numeros.length-1));
     }
 
-    public static int merge(int [] numeros, int inicio, int meio, int fim){
+    public static int merge(Integer [] numeros, int inicio, int meio, int fim){
         int count = 0;
         int esquerda = meio - inicio + 1;
         int direita = fim - meio;
@@ -54,7 +54,7 @@ public class MergeSort {
 
         return count;
     }
-    public static int mergeSort(int [] numeros, int inicio, int fim){
+    public static int mergeSort(Integer [] numeros, int inicio, int fim){
         int count = 0;
         if(inicio >= fim){
             return count;

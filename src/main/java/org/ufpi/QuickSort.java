@@ -6,11 +6,11 @@ public class QuickSort {
     private static int iterCount = 0;
 
     public static void main(String[] args) {
-        int[] numeros = {12, 11, 13, 5, 6, 7, 1, 3};
+        Integer[] numeros = {12, 11, 13, 5, 6, 7, 1, 3};
         System.out.println("iteracoes " + quickSort(numeros, 0, numeros.length-1));
     }
 
-    public static int quickSort(int[] arr, int low, int high) {
+    public static int quickSort(Integer[] arr, int low, int high) {
         if (low < high) {
             // pi é o índice da particion
             int pi = partition(arr, low, high);
@@ -23,7 +23,7 @@ public class QuickSort {
         return iterCount;
     }
 
-    private static int partition(int[] arr, int low, int high) {
+    private static int partition(Integer[] arr, int low, int high) {
         int pivot = arr[high];
         int i = (low - 1); // index do menor elemento
         for (int j = low; j < high; j++) {

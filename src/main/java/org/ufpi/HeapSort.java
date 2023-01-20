@@ -3,11 +3,11 @@ package org.ufpi;
 public class HeapSort {
     private static int iterCount = 0;
     public static void main(String[] args) {
-        int[] numeros = { 9, 6, 3, 5, 8, 4, 8, 6 };
+        Integer[] numeros = { 9, 6, 3, 5, 8, 4, 8, 6 };
         System.out.println("iteracoes " + heapSort(numeros, numeros.length));
     }
 
-    public static int heapSort(int[] arr, int n) {
+    public static int heapSort(Integer[] arr, int n) {
 
         // Construir o heap (rearrange array)
         for (int i = n / 2 - 1; i >= 0; i--) {
@@ -25,7 +25,7 @@ public class HeapSort {
         return iterCount;
     }
 
-    private static void heapify(int[] arr, int n, int i) {
+    private static void heapify(Integer[] arr, int n, int i) {
         iterCount++;
         int largest = i; // Inicializa como raiz
         int l = 2 * i + 1; // left = 2*i + 1
